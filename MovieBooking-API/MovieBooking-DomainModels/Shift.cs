@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MovieBooking_DomainModels
+{
+   public partial class Shift
+    {
+        public int Id { get; set; }
+        public string ShiftName { get; set; }
+        public DateTime Time { get; set; }
+    }
+}

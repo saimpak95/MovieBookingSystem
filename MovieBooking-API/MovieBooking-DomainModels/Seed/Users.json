@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "Saim",
+    "LastName": "Siddiqui",
+    "Email": "saimpak95@yahoo.com",
+    "Password": "3902185",
+    "Mobile": "3410245607",
+    "RoleID": 1
+  },
+  {
+    "Id": 2,
+    "FirstName": "Ammar",
+    "LastName": "Siddiqui",
+    "Email": "ammarpak95@gmail.com",
+    "Password": "3902185",
+    "Mobile": "3112452761",
+    "RoleID": 2
+  },
+  {
+    "Id": 3,
+    "FirstName": "Erass",
+    "LastName": "Mirza",
+    "Email": "erassmirza@aptechnn.com",
+    "Password": "3902185",
+    "Mobile": "3452121065",
+    "RoleID": 2
+  },
+  {
+    "Id": 4,
+    "FirstName": "Zain",
+    "LastName": "Khan",
+    "Email": "zainkhan43@hotmail.com",
+    "Password": "3902185",
+    "Mobile": "3112452761",
+    "RoleID": 2
+  },
+  {
+    "Id": 5,
+    "FirstName": "Hammad",
+    "LastName": "Mirza",
+    "Email": "hammadmirza@yahoo.com",
+    "Password": "3902185",
+    "Mobile": "3854569874",
+    "RoleID": 2
+  }
+]
