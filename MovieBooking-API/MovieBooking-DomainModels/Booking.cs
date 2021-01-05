@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MovieBooking_DomainModels
+﻿namespace MovieBooking_DomainModels
 {
-   public class Booking
+    public class Booking
     {
         public int Id { get; set; }
         public int TheaterID { get; set; }

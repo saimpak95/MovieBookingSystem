@@ -1,14 +1,11 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MovieBooking_DomainModels;
 using MovieBooking_DomainModels.Seed;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MovieBooking_API
@@ -20,7 +17,7 @@ namespace MovieBooking_API
             var host = CreateHostBuilder(args).Build();
             using (var scope = host.Services.CreateScope())
             {
-               var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
+                var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
                 var db = scope.ServiceProvider.GetRequiredService<DataContext>();
                 try
                 {

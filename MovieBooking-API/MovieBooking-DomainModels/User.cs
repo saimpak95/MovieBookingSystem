@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MovieBooking_DomainModels
+﻿namespace MovieBooking_DomainModels
 {
-   public partial class User
+    public partial class User
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

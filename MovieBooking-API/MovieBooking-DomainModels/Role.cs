@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MovieBooking_DomainModels
+﻿namespace MovieBooking_DomainModels
 {
     public partial class Role
     {

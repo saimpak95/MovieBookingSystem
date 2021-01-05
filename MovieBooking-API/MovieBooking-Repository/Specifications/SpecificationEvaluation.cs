@@ -1,13 +1,9 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using System.Text;
 
 namespace MovieBooking_Repository.Specifications
 {
-   public class SpecificationEvaluation<TEntity> where TEntity: class
+    public class SpecificationEvaluation<TEntity> where TEntity : class
     {
         public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, IBaseSpecification<TEntity> specification)
         {

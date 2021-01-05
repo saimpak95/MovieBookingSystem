@@ -3,13 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace MovieBooking_DomainModels.Seed
 {
-   public class SeedDataContext
+    public class SeedDataContext
     {
         public static async Task SeedDataAsync(DataContext db, ILoggerFactory loggerFactory)
         {
@@ -40,7 +39,6 @@ namespace MovieBooking_DomainModels.Seed
             {
                 var logger = loggerFactory.CreateLogger<DataContext>();
                 logger.LogError(ex.Message);
-             
             }
         }
     }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace MovieBooking_Repository.Specifications
 {
@@ -10,11 +9,11 @@ namespace MovieBooking_Repository.Specifications
         Expression<Func<T, bool>> Criteria { get; }
         List<Expression<Func<T, object>>> Includes { get; }
     }
+
     public class BaseSpecification<T> : IBaseSpecification<T>
     {
         public BaseSpecification()
         {
-
         }
 
         public BaseSpecification(Expression<Func<T, bool>> criteria)
@@ -22,11 +21,11 @@ namespace MovieBooking_Repository.Specifications
             Criteria = criteria;
         }
 
-        public Expression<Func<T, bool>> Criteria  { get; }
+        public Expression<Func<T, bool>> Criteria { get; }
 
         public List<Expression<Func<T, object>>> Includes { get; } = new List<Expression<Func<T, object>>>();
 
-        protected void AddIncludes(Expression<Func<T,object>> expression)
+        protected void AddIncludes(Expression<Func<T, object>> expression)
         {
             Includes.Add(expression);
         }

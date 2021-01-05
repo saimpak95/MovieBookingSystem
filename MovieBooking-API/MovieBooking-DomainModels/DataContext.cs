@@ -1,16 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MovieBooking_DomainModels
 {
-   public class DataContext  :DbContext
+    public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options):base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
         }
+
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<ShowTime> ShowTimes { get; set; }
         public DbSet<Shift> Shifts { get; set; }
